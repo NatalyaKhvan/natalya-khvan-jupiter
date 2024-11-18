@@ -2,7 +2,16 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #E9F1FA;
+    color: #141212bc;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 30px;
+    padding: 30px 30px 40px;
 }
 
 h1, h2 {
@@ -18,15 +27,6 @@ h1, h2 {
     letter-spacing: 2px; /* Adds space between letters */
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.01); /* Adds a shadow effect */
     margin: 0;
-}
-
-body {
-    background-color: #E9F1FA;
-    color: #141212bc;
-    font-family: Roboto, sans-serif;
-    line-height: 1.6;
-    margin: 30px;
-    padding: 30px 30px 40px;
 }
 
 #About {
