@@ -132,29 +132,35 @@ section {
 }
 
 #Experience li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     padding-bottom: 15px;
 }
 
-.job-header {
+.experienceTitle {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-self: flex-start;
+    flex-grow: 1;
+    text-align: left;
     margin-bottom: 8px;
-}
-
-.job-header strong {
     font-size: 18px;
     color: #323232;
 }
 
-.job-dates {
+.experienceDates {
+    align-self: flex-end;
+    flex-grow: 1;
+    text-align: right;
     font-size: 16px;
     color: #555;
     font-style: italic;
 }
 
 #Experience p {
+    flex-grow: 2;
+    text-align: left;
     font-size: 16px;
     color: #555;
     margin: 0;
