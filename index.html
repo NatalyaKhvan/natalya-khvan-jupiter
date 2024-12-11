@@ -9,27 +9,61 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#About" class="skip-link">Skip to main content</a>
     <h1 id="name">Natalya Khvan</h1>
-    <section id="About">
-        <h2>About</h2>
-        <img src="assets/IMG_3861.JPG" alt="A photo of the author" class="profile-picture">
-        <p>Hello, I'm Natalya! I’m passionate about technology and committed to creating high-quality software that truly makes a difference. My journey began in commercial banking, where I worked on loan processing systems and saw firsthand how effective software can streamline operations. This experience sparked my curiosity and led me into software testing, where I earned my certification as an SDET (Software Development Engineer in Test). Currently, I'm expanding my skill set by learning JavaScript at Code the Dream with the goal of growing as a software developer. I'm always eager to learn, take on new challenges, and contribute to meaningful projects. Thank you for visiting my portfolio—I look forward to connecting!</p>
-    </section>
-    <section id="Experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>uTest – Freelance Software Tester</strong><br>Performed functional and exploratory testing across diverse applications in e-commerce, media, and gaming, identifying and reporting software defects to improve application functionality and enhance the user experience.</li>
-            <li><strong>CYDEO - Software Development Engineer in Test (SDET) Practicum</strong><br>Worked on web application platforms such as Libsko, a scalable library management system, and Bibiclo, a cloud-based document management and collaboration platform, where I contributed to developing test automation frameworks supporting both manual and automated testing across functionality, APIs, and databases. Through close collaboration with cross-functional teams, I ensured seamless feature integration while promptly resolving issues to maintain high standards of software quality.</li>
-            <li><strong>BTA Bank – Loan Processor Group Manager</strong><br>Led a team responsible for processing and managing loan applications, ensuring both accuracy and compliance with regulatory standards. Additionally, I contributed to the development of the loan processing platform, collaborating with cross-functional teams to streamline the application process and optimize its functionality.</li>
+    <nav aria-label="Main Navigation">
+        <ul class="nav-list">
+            <li><a href="#About" title="Learn more about me and my background" aria-label="About Section">About</a></li>
+            <li><a href="#Experience" title="View my work experience" aria-label="Experience Section">Experience</a></li>
+            <li><a href="#Skills" title="See the skills I've acquired" aria-label="Skills Section">Skills</a></li>
+            <li><a href="#Projects" title="Explore my projects" aria-label="Projects Section">Projects</a></li>
+            <li><a href="#Connect" title="Get in touch with me" aria-label="Connect Section">Connect</a></li>
         </ul>
-    </section>
-    <section id="Connect">
-        <h2>Connect</h2>
-        <ul class="horizontal-list">
-            <li><a href="https://www.linkedin.com/in/natalyakhvan/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/NatalyaKhvan" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="mailto:natkhvan@gmail.com"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-    </section>
+    </nav>
+    <main>
+        <section id="About">
+            <h2>About</h2>
+            <div class="content">
+                <img src="assets/0A1A4204.jpeg" alt="Photo of the author standing in a bluebonnet field." class="profile-picture">
+                <p>Hello, I'm Natalya! I’m passionate about technology and committed to creating high-quality software that truly makes a difference. My journey began in commercial banking, where I worked on loan processing systems and saw firsthand how effective software can streamline operations. This experience sparked my curiosity and led me into software testing, where I earned my certification as an SDET (Software Development Engineer in Test). Currently, I'm expanding my skill set by learning JavaScript at Code the Dream with the goal of growing as a software developer. I'm always eager to learn, take on new challenges, and contribute to meaningful projects. Thank you for visiting my portfolio—I look forward to connecting!</p>
+            </div>
+        </section>
+        <section id="Experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <div class="experienceTitle">uTest – Freelance Software Tester</div>
+                    <div class="experienceDates">October 2023–Present</div>
+                    <p>Performed functional and exploratory testing across diverse applications in e-commerce, media, and gaming, identifying and reporting software defects to improve application functionality and enhance the user experience.</p>
+                </li>
+                <li>
+                    <div class="experienceTitle">CYDEO (Practicum) - Software Development Engineer in Test (SDET)</div>
+                    <div class="experienceDates">January 2023–September 2023</div>
+                    <p>Worked on web application platforms such as Libsko, a scalable library management system, and Bibiclo, a cloud-based document management and collaboration platform, where I contributed to developing test automation frameworks supporting both manual and automated testing across functionality, APIs, and databases. Through close collaboration with cross-functional teams, I ensured seamless feature integration while promptly resolving issues to maintain high standards of software quality.</p>
+                </li>
+                <li>
+                    <div class="experienceTitle">BTA Bank – Loan Processor Group Manager</div>
+                    <div class="experienceDates">June 2000–February 2003</div>
+                    <p>Led a team responsible for processing and managing loan applications, ensuring both accuracy and compliance with regulatory standards. Additionally, I contributed to the development of the loan processing platform, collaborating with cross-functional teams to streamline the application process and optimize its functionality.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="Skills">
+            <h2>Skills</h2>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <ul></ul>
+        </section>
+        <section id="Connect">
+            <h2>Connect</h2>
+            <ul class="horizontal-list">
+                <li><a href="https://www.linkedin.com/in/natalyakhvan/" target="_blank" aria-label="Visit my LinkedIn profile" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/NatalyaKhvan" target="_blank" aria-label="Visit my GitHub profile" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:natkhvan@gmail.com" aria-label="Send me an email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
