@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: #E9F1FA;
+    background-color: #ecf1f7;
     color: #333333;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -40,7 +40,7 @@ h1, h2 {
 
 /* ===== Navigation Bar Styling ===== */
 nav {
-    width: 84.7%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     position: fixed;
@@ -75,7 +75,6 @@ nav {
 /* ===== Main Section Styling ===== */
 main {
     margin: 0 auto;
-    padding: 15px 15px 0;
     max-width: 1200px;
 }
 
@@ -84,15 +83,12 @@ section {
     margin: 0 auto;
     padding: 20px;
     max-width: 1200px;
-}
-
-/* About Section */
-#About {
     background-color: #f5f5f5;
     margin-bottom: 10px;
 }
 
-#About h2 {
+/* ===== About Section ===== */
+#About {
     margin-bottom: 10px;
 }
 
@@ -116,50 +112,71 @@ section {
     color: #555;
 }
 
-/* Experience Section */
+/* ===== Experience Section ===== */
 #Experience {
-    background-color: #e1ebf1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 #Experience h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    color: #323232;
 }
 
 #Experience ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+#Experience ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 #Experience li {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin-bottom: 20px;
-    padding-bottom: 15px;
+    background-color: #e3e7eb;
+    padding: 15px;
 }
 
 .experienceTitle {
-    display: flex;
+    /* display: flex;
     align-self: flex-start;
     flex-grow: 1;
-    text-align: left;
+    text-align: left; */
     margin-bottom: 8px;
     font-size: 18px;
     color: #323232;
+    font-weight: bold;
 }
 
 .experienceDates {
-    align-self: flex-end;
-    flex-grow: 1;
-    text-align: right;
+    /* align-self: flex-end;
+    flex-grow: 1; */
+    text-align: left;
     font-size: 16px;
     color: #555;
     font-style: italic;
+    margin-bottom: 12px;
 }
 
 #Experience p {
-    flex-grow: 2;
+    /* flex-grow: 2; */
     text-align: left;
     font-size: 16px;
     color: #555;
@@ -167,23 +184,30 @@ section {
     line-height: 1.6;
 }
 
-/* Connect Section */
+/* ===== Connect Section ===== */
 #Connect {
     width: 100%;
     text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .horizontal-list {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
     padding: 0;
     margin: 0;
 }
 
 .horizontal-list li {
-    display: inline-block;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+    padding: 10px;
 }
 
 .horizontal-list a {
@@ -218,14 +242,30 @@ section {
 
 /* ===== Responsive Styles ===== */
 @media (max-width: 768px) {
+
+    body {
+        padding-top: 60px; /* Adjust this value based on your navigation bar's height */
+    }
+
+    h1, h2 {
+        font-size: 24px;
+        color: #222e3b;
+    }
+
+    #name {
+        font-size: 1.5em;
+        font-style: italic;
+    }
+
     nav {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
+        background-color: #e5f1f8;
     }
 
     .nav-list {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     #About .content {
@@ -234,6 +274,56 @@ section {
     }
 
     .profile-picture {
-        width: 200px; /* Adjusted for smaller screens */
+        width: 150px;
+    
+    }
+
+    /* Experience Section: Grid Layout */
+    #Experience {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .experienceTitle {
+        font-size: 18px;
+    }
+
+    .experienceDates {
+        font-size: 14px;
+    }
+
+    #Experience p {
+        font-size: 14px;
+    }
+
+    /* Connect Section: Grid Layout */
+    #Connect {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .horizontal-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .horizontal-list li {
+        display: inline-block;
+    }
+
+    /* Horizontal Links (for Connect section) */
+    .horizontal-list a {
+        font-size: 24px;
+        color: #323232;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .horizontal-list a:hover {
+        color: #4a90e2;
     }
 }
