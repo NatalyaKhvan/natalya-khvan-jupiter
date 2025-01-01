@@ -1,3 +1,5 @@
+/* This design is Desktop first */
+
 /* ==== Font Declaration ==== */
 @font-face {
     font-family: 'Roboto';
@@ -146,19 +148,12 @@ section {
 }
 
 #Experience li {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     margin-bottom: 20px;
     background-color: #e3e7eb;
     padding: 15px;
 }
 
 .experienceTitle {
-    /* display: flex;
-    align-self: flex-start;
-    flex-grow: 1;
-    text-align: left; */
     margin-bottom: 8px;
     font-size: 18px;
     color: #323232;
@@ -166,8 +161,6 @@ section {
 }
 
 .experienceDates {
-    /* align-self: flex-end;
-    flex-grow: 1; */
     text-align: left;
     font-size: 16px;
     color: #555;
@@ -176,7 +169,6 @@ section {
 }
 
 #Experience p {
-    /* flex-grow: 2; */
     text-align: left;
     font-size: 16px;
     color: #555;
@@ -202,9 +194,6 @@ section {
 }
 
 .horizontal-list li {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: grid;
     place-items: center;
     padding: 10px;
@@ -240,11 +229,88 @@ section {
     outline: none;
 }
 
-/* ===== Responsive Styles ===== */
+/* ===== Responsive Styles for Mobile devices ===== */
 @media (max-width: 768px) {
 
     body {
-        padding-top: 60px; /* Adjust this value based on your navigation bar's height */
+        padding-top: 100px;
+    }
+
+    h1, h2 {
+        font-size: 14px;
+        color: #222e3b;
+    }
+
+    #name {
+        font-size: 1.2em;
+        font-style: italic;
+        margin-top: 80px;
+    }
+
+    nav {
+        padding: 10px;
+        background-color: #e5f1f8;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list a {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    
+    #About .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 80px;
+    }
+    
+    #About p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    #Experience {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .experienceTitle {
+        font-size: 12px;
+    }
+
+    .experienceDates {
+        font-size: 10px;
+    }
+
+    #Experience p {
+        font-size: 10px;
+    }
+
+    #Connect {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .horizontal-list {
+        grid-template-columns: 1fr;
+    }
+
+    .horizontal-list a {
+        font-size: 16px;
+    } 
+}
+
+/* ===== Responsive Styles for Tablets ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        padding-top: 60px;
     }
 
     h1, h2 {
@@ -255,10 +321,10 @@ section {
     #name {
         font-size: 1.5em;
         font-style: italic;
+        margin-top: 80px;
     }
 
     nav {
-        width: 100%;
         padding: 15px;
         background-color: #e5f1f8;
     }
@@ -268,6 +334,10 @@ section {
         gap: 20px;
     }
 
+    .nav-list a {
+        font-size: 12px;
+    }
+    
     #About .content {
         flex-direction: column;
         text-align: center;
@@ -275,19 +345,20 @@ section {
 
     .profile-picture {
         width: 150px;
+    }
     
+    #About p {
+        font-size: 12px;
+        line-height: 1.2;
     }
 
-    /* Experience Section: Grid Layout */
     #Experience {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
+        gap: 15px;
+        padding: 15px;
     }
 
     .experienceTitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .experienceDates {
@@ -298,7 +369,6 @@ section {
         font-size: 14px;
     }
 
-    /* Connect Section: Grid Layout */
     #Connect {
         display: grid;
         grid-template-columns: 1fr;
@@ -306,24 +376,11 @@ section {
     }
 
     .horizontal-list {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .horizontal-list li {
-        display: inline-block;
-    }
-
-    /* Horizontal Links (for Connect section) */
     .horizontal-list a {
-        font-size: 24px;
-        color: #323232;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .horizontal-list a:hover {
-        color: #4a90e2;
-    }
+        font-size: 20px;
+    } 
 }
