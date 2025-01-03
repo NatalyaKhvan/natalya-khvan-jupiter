@@ -90,10 +90,6 @@ section {
 }
 
 /* ===== About Section ===== */
-#About {
-    margin-bottom: 10px;
-}
-
 #About .content {
     display: flex;
     align-items: center;
@@ -119,14 +115,6 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px;
-}
-
-#Experience h2 {
-    margin-bottom: 20px;
-    font-size: 26px;
-    text-align: center;
-    color: #323232;
 }
 
 #Experience ul {
@@ -148,13 +136,11 @@ section {
 }
 
 #Experience li {
-    margin-bottom: 20px;
     background-color: #e3e7eb;
     padding: 15px;
 }
 
 .experienceTitle {
-    margin-bottom: 8px;
     font-size: 18px;
     color: #323232;
     font-weight: bold;
@@ -162,10 +148,10 @@ section {
 
 .experienceDates {
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
     color: #555;
     font-style: italic;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 #Experience p {
@@ -174,6 +160,24 @@ section {
     color: #555;
     margin: 0;
     line-height: 1.6;
+}
+
+/* ===== Skills Section ===== */
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+#Skills li {
+    background-color: #e3e7eb;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* ===== Connect Section ===== */
@@ -210,6 +214,11 @@ section {
     color: #4a90e2;
 }
 
+/* ===== Footer ===== */
+footer p {
+    font-style: italic;
+}
+
 /* ===== Accessibility Styling ===== */
 .skip-link {
     position: absolute;
@@ -237,7 +246,7 @@ section {
     }
 
     h1, h2 {
-        font-size: 14px;
+        font-size: 20px;
         color: #222e3b;
     }
 
@@ -248,7 +257,6 @@ section {
     }
 
     nav {
-        padding: 10px;
         background-color: #e5f1f8;
     }
 
@@ -258,7 +266,7 @@ section {
     }
 
     .nav-list a {
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px 15px;
     }
     
@@ -286,11 +294,15 @@ section {
     }
 
     .experienceDates {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     #Experience p {
         font-size: 10px;
+    }
+
+    #Skills li {
+        font-size: 12px;
     }
 
     #Connect {
@@ -305,6 +317,10 @@ section {
     .horizontal-list a {
         font-size: 16px;
     } 
+
+    footer p {
+        font-size: 10px;
+    }
 }
 
 /* ===== Responsive Styles for Tablets ===== */
@@ -314,7 +330,7 @@ section {
     }
 
     h1, h2 {
-        font-size: 24px;
+        font-size: 25px;
         color: #222e3b;
     }
 
@@ -325,7 +341,6 @@ section {
     }
 
     nav {
-        padding: 15px;
         background-color: #e5f1f8;
     }
 
@@ -348,7 +363,7 @@ section {
     }
     
     #About p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.2;
     }
 
@@ -362,11 +377,15 @@ section {
     }
 
     .experienceDates {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     #Experience p {
         font-size: 14px;
+    }
+
+    #Skills li {
+        font-size: 16px;
     }
 
     #Connect {
@@ -383,4 +402,8 @@ section {
     .horizontal-list a {
         font-size: 20px;
     } 
+
+    footer p {
+        font-size: 12px;
+    }
 }
