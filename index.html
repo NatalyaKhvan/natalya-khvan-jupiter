@@ -19,6 +19,7 @@
             <li><a href="#Skills" title="See the skills I've acquired" aria-label="Skills Section">Skills</a></li>
             <li><a href="#Projects" title="Explore my projects" aria-label="Projects Section">Projects</a></li>
             <li><a href="#Connect" title="Get in touch with me" aria-label="Connect Section">Connect</a></li>
+            <li><a href="#LeaveMessage" title="Leave a Message" aria-label="Leave a Message Section">Leave a Message</a></li>
         </ul>
     </nav>
     <main>
@@ -64,6 +65,22 @@
                 <li><a href="https://github.com/NatalyaKhvan" target="_blank" aria-label="Visit my GitHub profile" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
                 <li><a href="mailto:natkhvan@gmail.com" aria-label="Send me an email"><i class="fas fa-envelope"></i></a></li>
             </ul>
+        </section>
+        <section id="LeaveMessage">
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+                <label for="usersName">Name:</label>
+                <input type="text" name="usersName" required=true>
+                <label for="usersEmail">Email:</label>
+                <input type="email" name="usersEmail" required="true">
+                <label for="usersMessage">Message:</label>
+                <textarea name="usersMessage" required=true></textarea>
+                <button type="submit">Submit</button>            
+            </form>
+        </section>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
         </section>
     </main>
     <script src="js/index.js"></script>
