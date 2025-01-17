@@ -77,3 +77,46 @@ messageForm.addEventListener('submit', function(event) {
     toggleMessageSection();
     event.target.reset();
 });
+
+toggleMessageSection();
+
+const githubUsername = "NatalyaKhvan";
+
+fetch(`https://api.github.com/users/${githubUsername}/repos`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(repositories => {
+        console.log(repositories);
+
+        const projectSection = document.getElementById("Projects");
+
+        const projectList = document.createElement("ul");
+
+        repositories.forEach(repo => {
+            const project = document.createElement("li");
+
+            const projectLink = document.createElement("a");
+            projectLink.href = repo.html_url;
+            projectLink.target ="_blank";
+            projectLink.rel = "noopener noreferrer";
+            projectLink.innerText = repo.name;
+            project.appendChild(projectLink);
+            projectList.appendChild(project);
+        });
+
+        projectSection.appendChild(projectList);
+    })
+    .catch(error => {
+        console.error("Error fetching repositories:", error);
+
+        const projectSection = document.getElementById("Projects");
+
+        const errorMessage = document.createElement("p");
+        errorMessage.innerText = "Could not load repositories. Please try again later.";
+        projectSection.appendChild(errorMessage);
+    });
+
