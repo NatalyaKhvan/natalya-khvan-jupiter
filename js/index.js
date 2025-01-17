@@ -94,7 +94,7 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
 
         const projectSection = document.getElementById("Projects");
 
-        const projectList = document.createElement("ul");
+        const projectList = projectSection.querySelector("ul");
 
         repositories.forEach(repo => {
             const project = document.createElement("li");
@@ -108,7 +108,6 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
             projectList.appendChild(project);
         });
 
-        projectSection.appendChild(projectList);
     })
     .catch(error => {
         console.error("Error fetching repositories:", error);
