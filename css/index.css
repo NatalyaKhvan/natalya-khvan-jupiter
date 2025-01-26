@@ -308,7 +308,7 @@ form button:hover {
 /* ===== Footer ===== */
 footer p {
     font-style: italic;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* ===== Accessibility Styling ===== */
@@ -338,7 +338,7 @@ footer p {
     }
 
     h1, h2 {
-        font-size: 20px;
+        font-size: 22px;
         color: #222e3b;
     }
 
@@ -358,7 +358,7 @@ footer p {
     }
 
     .nav-list a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 15px;
     }
     
@@ -376,24 +376,23 @@ footer p {
     }
     
     #About p {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 14px;
     }
 
     .experienceTitle {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .experienceDates {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     #Experience p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #Skills li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #Projects ul {
@@ -402,15 +401,15 @@ footer p {
     }
     
     #Projects li a {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .projectDate {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     #Projects li p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .horizontal-list {
@@ -427,39 +426,39 @@ footer p {
     }
 
     form label {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     form input,
     form textarea {
         padding: 5px;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 5px;
     }
     
     form button {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #messages li {
         gap: 10px;
         padding: 5px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     #messages li span {
         margin-left: 5px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     #messages li button {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     footer p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 /* ===== Responsive Styles for Tablets ===== */
@@ -469,7 +468,7 @@ footer p {
     }
 
     h1, h2 {
-        font-size: 25px;
+        font-size: 28px;
         color: #222e3b;
     }
 
@@ -489,7 +488,7 @@ footer p {
     }
 
     .nav-list a {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     section{
@@ -507,7 +506,6 @@ footer p {
     
     #About p {
         font-size: 14px;
-        line-height: 1.2;
     }
 
     #Experience {

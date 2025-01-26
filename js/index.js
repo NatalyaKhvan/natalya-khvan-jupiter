@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 const footer = document.createElement('footer');
 body.appendChild(footer);
 
-// Insert copyright text in footer
+// Insert copyright text (current year and student's name) in footer
 const today = new Date();
 const thisYear = today.getFullYear();
 
@@ -11,11 +11,10 @@ const copyright = document.createElement('p');
 copyright.innerHTML = `\u00A9 Natalya Khvan ${thisYear}`;
 footer.appendChild(copyright);
 
-// Add Skills section
+// Add Skills section and list of skills using array
 const skills = ['JavaScript', 'Java', 'HTML', 'CSS', 'SQL', 'Selenium', 'CucumberBDD','JUnit','TestNG', 'JDBC', 'REST Assured Library', 'Postman','Github', 'Jira X-Ray'];
 const skillsSection = document.querySelector('#Skills');
 
-// Add list of skills
 const skillList = skillsSection.querySelector('ul');
 for (let i = 0; i<skills.length; i++){
     const skill =document.createElement('li');
@@ -163,4 +162,3 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
         errorMessage.innerText = "Could not load repositories. Please try again later.";
         projectSection.appendChild(errorMessage);
     });
-
