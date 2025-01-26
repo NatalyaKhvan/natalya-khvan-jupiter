@@ -173,13 +173,16 @@ section {
     gap: 30px;
     padding: 0;
     list-style-type: none;
-    text-align: center;
 }
 
 #Projects li {
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
     padding: 10px 25px;
     background-color: #e3e7eb;
+    color: #555;
+    text-align: left;
 }
 
 #Projects li a {
@@ -190,6 +193,20 @@ section {
 
 #Projects li a:hover {
     color: #4a90e2;
+}
+
+.projectDate {
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#Projects li p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* ===== Connect Section ===== */
@@ -291,7 +308,7 @@ form button:hover {
 /* ===== Footer ===== */
 footer p {
     font-style: italic;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* ===== Accessibility Styling ===== */
@@ -321,7 +338,7 @@ footer p {
     }
 
     h1, h2 {
-        font-size: 20px;
+        font-size: 22px;
         color: #222e3b;
     }
 
@@ -341,7 +358,7 @@ footer p {
     }
 
     .nav-list a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 15px;
     }
     
@@ -359,33 +376,40 @@ footer p {
     }
     
     #About p {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 14px;
     }
 
     .experienceTitle {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .experienceDates {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     #Experience p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #Skills li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #Projects ul {
         flex-direction: column; 
         gap: 15px;
     }
+    
+    #Projects li a {
+        font-size: 16px;
+    }
+    
+    .projectDate {
+        font-size: 15px;
+    }
 
-    #Projects li {
-        font-size: 12px;
+    #Projects li p {
+        font-size: 14px;
     }
 
     .horizontal-list {
@@ -402,39 +426,39 @@ footer p {
     }
 
     form label {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     form input,
     form textarea {
         padding: 5px;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 5px;
     }
     
     form button {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #messages li {
         gap: 10px;
         padding: 5px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     #messages li span {
         margin-left: 5px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     #messages li button {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     footer p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 /* ===== Responsive Styles for Tablets ===== */
@@ -444,7 +468,7 @@ footer p {
     }
 
     h1, h2 {
-        font-size: 25px;
+        font-size: 28px;
         color: #222e3b;
     }
 
@@ -464,7 +488,7 @@ footer p {
     }
 
     .nav-list a {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     section{
@@ -482,7 +506,6 @@ footer p {
     
     #About p {
         font-size: 14px;
-        line-height: 1.2;
     }
 
     #Experience {
@@ -508,6 +531,27 @@ footer p {
 
     #Projects li {
         font-size: 16px;
+    }
+
+    #Projects li p {
+        font-size: 14px;
+    }
+
+    #Projects ul {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    #Projects li a {
+        font-size: 16px;
+    }
+    
+    .projectDate {
+        font-size: 15px;
+    }
+
+    #Projects li p {
+        font-size: 14px;
     }
 
     .horizontal-list {
