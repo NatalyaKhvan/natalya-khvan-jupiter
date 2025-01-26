@@ -173,13 +173,16 @@ section {
     gap: 30px;
     padding: 0;
     list-style-type: none;
-    text-align: center;
 }
 
 #Projects li {
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
     padding: 10px 25px;
     background-color: #e3e7eb;
+    color: #555;
+    text-align: left;
 }
 
 #Projects li a {
@@ -190,6 +193,20 @@ section {
 
 #Projects li a:hover {
     color: #4a90e2;
+}
+
+.projectDate {
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#Projects li p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* ===== Connect Section ===== */
@@ -383,9 +400,17 @@ footer p {
         flex-direction: column; 
         gap: 15px;
     }
-
-    #Projects li {
+    
+    #Projects li a {
         font-size: 12px;
+    }
+    
+    .projectDate {
+        font-size: 11px;
+    }
+
+    #Projects li p {
+        font-size: 10px;
     }
 
     .horizontal-list {
@@ -508,6 +533,27 @@ footer p {
 
     #Projects li {
         font-size: 16px;
+    }
+
+    #Projects li p {
+        font-size: 14px;
+    }
+
+    #Projects ul {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    #Projects li a {
+        font-size: 16px;
+    }
+    
+    .projectDate {
+        font-size: 15px;
+    }
+
+    #Projects li p {
+        font-size: 14px;
     }
 
     .horizontal-list {
