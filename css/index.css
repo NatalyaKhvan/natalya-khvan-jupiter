@@ -123,7 +123,7 @@ section {
 
 #Experience li {
     background-color: #e3e7eb;
-    padding: 15px;
+    padding: 10px;
 }
 
 .experienceTitle {
@@ -380,15 +380,15 @@ footer p {
     }
 
     .experienceTitle {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .experienceDates {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #Experience p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #Skills li {
