@@ -12,6 +12,7 @@
 }
 
 html {
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
@@ -272,7 +273,11 @@ form button:hover {
 
 /* ===== Messages Section ===== */
 #messages ul {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 #messages li {
@@ -441,9 +446,11 @@ footer p {
         font-size: 14px;
     }
 
+    #messages ul {
+        font-size: 14px;
+    }
+
     #messages li {
-        gap: 10px;
-        padding: 5px;
         font-size: 14px;
     }
     
@@ -460,6 +467,7 @@ footer p {
     footer p {
         font-size: 12px;
     }
+}
 
 /* ===== Responsive Styles for Tablets ===== */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -583,9 +591,11 @@ footer p {
         font-size: 14px;
     }
 
+    #messages ul {
+        font-size: 14px;
+    }
+
     #messages li {
-        gap: 10px;
-        padding: 7px;
         font-size: 14px;
     }
     
@@ -602,5 +612,4 @@ footer p {
     footer p {
         font-size: 12px;
     }
-}
 }
